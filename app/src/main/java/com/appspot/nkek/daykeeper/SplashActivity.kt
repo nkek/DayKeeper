@@ -7,6 +7,7 @@ import android.os.Bundle
 
 import android.os.Handler
 import com.appspot.nkek.daykeeper.View.Main2Activity
+import com.appspot.nkek.daykeeper.View.NavigationDrawerActivity
 
 
 class SplashActivity : Activity() {
@@ -18,7 +19,7 @@ class SplashActivity : Activity() {
         setContentView(R.layout.activity_splash)
 
         Handler().postDelayed(Runnable {
-            val mainIntent = Intent(this@SplashActivity, Main2Activity::class.java)
+            val mainIntent = Intent(this@SplashActivity, NavigationDrawerActivity::class.java)
             this@SplashActivity.startActivity(mainIntent)
             this@SplashActivity.finish()
         }, DELAY_MILLIS)

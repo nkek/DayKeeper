@@ -17,7 +17,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
-        <activity android:name=".View.Main2Activity"></activity>
+        <activity android:name=".View.Main2Activity" />
+        <activity
+            android:name=".View.NavigationDrawerActivity"
+            android:label="@string/title_activity_navigation_drawer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".View.NavigationKotlinActivity"></activity>
     </application>
 
 </manifest>
