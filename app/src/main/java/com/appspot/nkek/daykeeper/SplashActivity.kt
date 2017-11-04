@@ -6,7 +6,6 @@ import android.content.Intent
 import android.os.Bundle
 
 import android.os.Handler
-import com.appspot.nkek.daykeeper.View.Main2Activity
 import com.appspot.nkek.daykeeper.View.NavigationDrawerActivity
 
 
