@@ -1,11 +1,8 @@
 package com.appspot.nkek.daykeeper.LocalDB
 
-
-
 import android.content.Context
 import android.content.SharedPreferences
 import com.appspot.nkek.daykeeper.MyApplication
-import com.appspot.nkek.daykeeper.MyApplication2
 
 class CYDPreference private constructor() {
 
@@ -25,7 +22,7 @@ class CYDPreference private constructor() {
     private var agreeIsChecked: Boolean? = null
 
     init {
-        mPrefs = MyApplication2.context!!.getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE)
+        mPrefs = MyApplication.context!!.getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE)
         mEditor = mPrefs.edit()
     }
 
