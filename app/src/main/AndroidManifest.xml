@@ -17,8 +17,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
-        <activity android:name=".View.Main2Activity" />
+        <activity android:name=".View.StartInfoActivity" />
         <activity
             android:name=".View.NavigationDrawerActivity"
             android:label="@string/title_activity_navigation_drawer"
