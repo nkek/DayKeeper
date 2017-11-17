@@ -6,10 +6,11 @@
     android:layout_height="match_parent"
     tools:context="com.appspot.nkek.daykeeper.View.StartInfoActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Main Activity"/>
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
+<com.viewpagerindicator.CirclePageIndicator
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
 </FrameLayout>
