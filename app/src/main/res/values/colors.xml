@@ -5,4 +5,8 @@
     <color name="colorAccent">#FF4081</color>
     <color name="white">#FFFFFF</color>
     <color name="dayKeeperBackgroungColor">#75C9A6</color>
+    <color name="info1">#5fd1ba</color>
+    <color name="info2">#65c1f5</color>
+    <color name="info3">#62cbb7</color>
+    <color name="info4">#64bded</color>
     </resources>

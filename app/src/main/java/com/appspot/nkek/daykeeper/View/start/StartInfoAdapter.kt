@@ -1,6 +1,8 @@
 package com.appspot.nkek.daykeeper.View.start
 
+import android.annotation.SuppressLint
 import android.content.Context
+import android.graphics.Color
 import android.graphics.drawable.Drawable
 import android.os.Build
 import android.support.v4.view.PagerAdapter
@@ -18,11 +20,18 @@ import kotlinx.android.synthetic.main.layout_start_info.view.*
  */
 open class StartInfoAdapter(val context: Context,val list:List<Drawable>): PagerAdapter() {
 
+    @SuppressLint("ResourceAsColor")
     override fun instantiateItem(container: ViewGroup, position: Int): Any {
         val view = LayoutInflater.from(context).inflate(R.layout.layout_start_info, container,false)!!
+
         val frame : FrameLayout = view.findViewById(R.id.backgroundLayout) as FrameLayout
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
-            frame.background = list[position]
+        val backImage : ImageView = view.findViewById(R.id.backgroundImage) as ImageView
+        backImage.setImageDrawable(list[position])
+        when(position){
+            0 -> {frame.setBackgroundColor(Color.RED)}
+            1 -> {frame.setBackgroundColor(Color.}
+            2 -> {frame.setBackgroundColor(Color.alpha(R.color.info3))}
+            3 -> {frame.setBackgroundColor(Color.alpha(R.color.info4))}
         }
 
         container.addView(view)

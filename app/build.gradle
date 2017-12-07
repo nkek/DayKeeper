@@ -6,7 +6,7 @@ android {
     buildToolsVersion '26.0.2'
     defaultConfig {
         applicationId "com.appspot.nkek.daykeeper"
-        minSdkVersion 15
+        minSdkVersion 18
         targetSdkVersion 25
         versionCode 1
         versionName "1.0"
@@ -30,6 +30,7 @@ dependencies {
 
 
     compile 'com.github.JakeWharton:ViewPagerIndicator:2.4.1'
+    compile 'com.android.support:support-v4:25.3.1'
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
  
