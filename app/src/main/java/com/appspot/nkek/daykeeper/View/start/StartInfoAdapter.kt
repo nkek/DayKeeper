@@ -28,10 +28,10 @@ open class StartInfoAdapter(val context: Context,val list:List<Drawable>): Pager
         val backImage : ImageView = view.findViewById(R.id.backgroundImage) as ImageView
         backImage.setImageDrawable(list[position])
         when(position){
-            0 -> {frame.setBackgroundColor(Color.RED)}
-            1 -> {frame.setBackgroundColor(Color.GREEN)}
-            2 -> {frame.setBackgroundColor(Color.alpha(R.color.info3))}
-            3 -> {frame.setBackgroundColor(Color.alpha(R.color.info4))}
+            0 -> {frame.setBackgroundColor(Color.rgb(100,208,186))}
+            1 -> {frame.setBackgroundColor(Color.rgb(105,194,242))}
+            2 -> {frame.setBackgroundColor(Color.rgb(102,202,183))}
+            3 -> {frame.setBackgroundColor(Color.rgb(105,190,236))}
         }
 
         container.addView(view)
