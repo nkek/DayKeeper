@@ -1,5 +1,6 @@
 package com.appspot.nkek.daykeeper.View
 
+import android.annotation.TargetApi
 import android.app.Activity
 import android.os.Build
 import android.os.Bundle
@@ -17,7 +18,7 @@ class StartInfoActivity: Activity() {
 
     var pager:ViewPager ?= null
 
-    @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
+    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_startinfo)

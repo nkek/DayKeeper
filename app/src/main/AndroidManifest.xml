@@ -19,8 +19,7 @@
         </activity>
         <activity android:name=".View.StartInfoActivity" android:theme="@style/AppTheme.NoActionBarFullScreen"/>
         <activity
-            android:name=".View.NavigationDrawerActivity"
-            android:label="@string/title_activity_navigation_drawer"
+            android:name=".View.MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".View.NavigationKotlinActivity"></activity>
     </application>

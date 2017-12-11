@@ -9,25 +9,29 @@
         android:id="@+id/backgroundImage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
         android:layout_gravity="bottom"
         android:adjustViewBounds="true"
         android:scaleType="fitXY"
         />
     <ImageView
+        android:id="@+id/agreeButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="60dp"
+        android:visibility="gone"
         android:src="@drawable/intro_4_btn_01"/>
     <ImageView
+        android:id="@+id/disagreeButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
+        android:layout_marginBottom="-12dp"
+        android:visibility="gone"
         android:src="@drawable/intro_4_btn_02_a"/>
 
 </FrameLayout>

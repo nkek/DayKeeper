@@ -7,6 +7,7 @@ import android.os.Bundle
 
 import android.os.Handler
 import com.appspot.nkek.daykeeper.LocalDB.CYDPreference
+import com.appspot.nkek.daykeeper.View.MainActivity
 import com.appspot.nkek.daykeeper.View.NavigationDrawerActivity
 import com.appspot.nkek.daykeeper.View.StartInfoActivity
 
@@ -21,7 +22,7 @@ class SplashActivity : Activity() {
 
         Handler().postDelayed({
             if(CYDPreference.getInstance().checked){
-                val mainIntent = Intent(this@SplashActivity, NavigationDrawerActivity::class.java)
+                val mainIntent = Intent(this@SplashActivity, MainActivity::class.java)
                 this@SplashActivity.startActivity(mainIntent)
             }else{
                 val mainIntent = Intent(this@SplashActivity, StartInfoActivity::class.java)
