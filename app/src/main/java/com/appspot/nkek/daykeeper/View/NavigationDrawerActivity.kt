@@ -1,5 +1,6 @@
 package com.appspot.nkek.daykeeper.View
 
+import android.app.Activity
 import android.os.Bundle
 import android.support.design.widget.FloatingActionButton
 import android.support.design.widget.Snackbar
@@ -14,14 +15,14 @@ import android.view.MenuItem
 
 import com.appspot.nkek.daykeeper.R
 
-class NavigationDrawerActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
+class NavigationDrawerActivity : Activity(), NavigationView.OnNavigationItemSelectedListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_navigation_drawer)
         val toolbar = findViewById(R.id.toolbar) as Toolbar
         toolbar.setTitle("")
-        setSupportActionBar(toolbar)
+//        setSupportActionBar(toolbar)
 
         val fab = findViewById(R.id.fab) as FloatingActionButton
         fab.setOnClickListener { view ->
@@ -55,8 +56,6 @@ class NavigationDrawerActivity : AppCompatActivity(), NavigationView.OnNavigatio
         if (id == R.id.nav_camera) {
             // Handle the camera action
         } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
 
         } else if (id == R.id.nav_manage) {
 

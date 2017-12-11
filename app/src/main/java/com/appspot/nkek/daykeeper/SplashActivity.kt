@@ -22,7 +22,7 @@ class SplashActivity : Activity() {
 
         Handler().postDelayed({
             if(CYDPreference.getInstance().checked){
-                val mainIntent = Intent(this@SplashActivity, MainActivity::class.java)
+                val mainIntent = Intent(this@SplashActivity, NavigationDrawerActivity::class.java)
                 this@SplashActivity.startActivity(mainIntent)
             }else{
                 val mainIntent = Intent(this@SplashActivity, StartInfoActivity::class.java)

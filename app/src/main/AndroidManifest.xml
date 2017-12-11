@@ -21,7 +21,7 @@
         <activity
             android:name=".View.MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".View.NavigationKotlinActivity"></activity>
+        <activity android:name=".View.NavigationDrawerActivity"></activity>
     </application>
 
 </manifest>
