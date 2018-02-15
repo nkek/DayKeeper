@@ -17,7 +17,7 @@ import android.widget.Toast
 import com.appspot.nkek.daykeeper.R
 
 
-class NavigationDrawerActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
+class NavigationDrawerActivity : Activity(), NavigationView.OnNavigationItemSelectedListener {
 
     var mFragment: Fragment? = null
 
@@ -64,10 +64,10 @@ class NavigationDrawerActivity : AppCompatActivity(), NavigationView.OnNavigatio
         val id = item.itemId
 
         if (id == R.id.navUserInfo) {
-            mFragment = HomeFragment()
+          //  mFragment = HomeFragment()
             Toast.makeText(this, "home", Toast.LENGTH_SHORT).show()
         } else if (id == R.id.navUserDiary) {
-            mFragment = DiaryListFragment()
+         //   mFragment = DiaryListFragment()
             Toast.makeText(this, "diary list", Toast.LENGTH_SHORT).show()
         } else if (id == R.id.nav_manage) {
 
@@ -76,14 +76,14 @@ class NavigationDrawerActivity : AppCompatActivity(), NavigationView.OnNavigatio
         } else if (id == R.id.nav_send) {
 
         } else {
-            mFragment = HomeFragment()
+          //  mFragment = HomeFragment()
         }
 
-        if (mFragment != null) {
-            val ft = supportFragmentManager.beginTransaction()
-            ft.replace(R.id.content_fragment_layout, mFragment)
-            ft.commit()
-        }
+//        if (mFragment != null) {
+//            val ft = supportFragmentManager.beginTransaction()
+//            ft.replace(R.id.content_fragment_layout, mFragment)
+//            ft.commit()
+//        }
 
         val drawer = findViewById(R.id.drawer_layout) as DrawerLayout
         drawer.closeDrawer(GravityCompat.START)
