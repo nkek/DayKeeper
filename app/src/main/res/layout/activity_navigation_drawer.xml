@@ -23,5 +23,9 @@
         android:background="@color/white"
         app:headerLayout="@layout/nav_header_navigation_drawer"
         app:menu="@menu/activity_navigation_drawer_drawer" />
+    <FrameLayout
+        android:id="@+id/content_fragment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 </android.support.v4.widget.DrawerLayout>

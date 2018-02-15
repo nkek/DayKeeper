@@ -21,7 +21,7 @@
         <activity
             android:name=".View.MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".View.NavigationDrawerActivity"></activity>
+        <activity android:name=".View.NavigationDrawerActivity" android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
