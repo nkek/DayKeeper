@@ -3,20 +3,15 @@ package com.appspot.nkek.daykeeper.View
 import android.app.Activity
 import android.os.Bundle
 import android.support.design.widget.FloatingActionButton
-import android.support.design.widget.Snackbar
-import android.view.View
 import android.support.design.widget.NavigationView
+import android.support.design.widget.Snackbar
 import android.support.v4.content.ContextCompat
 import android.support.v4.view.GravityCompat
 import android.support.v4.widget.DrawerLayout
 import android.support.v7.app.ActionBarDrawerToggle
-import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.Toolbar
 import android.view.MenuItem
-
 import com.appspot.nkek.daykeeper.R
-import com.appspot.nkek.daykeeper.R.id.fab
-
 
 
 class NavigationDrawerActivity : Activity(), NavigationView.OnNavigationItemSelectedListener {
@@ -30,8 +25,8 @@ class NavigationDrawerActivity : Activity(), NavigationView.OnNavigationItemSele
 
         val fab = findViewById(R.id.fab) as FloatingActionButton
       //  fab.setImageResource(R.drawable.main_icon_write);
-        fab.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.main_icon_write));
-        fab.setPadding(0, 0, 0, 0)
+//        fab.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.ic_mode_edit_black_48dp));
+//        fab.setPadding(0, 0, 0, 0)
         fab.setOnClickListener { view ->
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show()

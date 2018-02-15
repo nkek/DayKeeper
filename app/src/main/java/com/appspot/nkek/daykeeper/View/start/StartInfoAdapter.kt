@@ -15,6 +15,7 @@ import android.widget.ImageView
 import com.appspot.nkek.daykeeper.LocalDB.CYDPreference
 import com.appspot.nkek.daykeeper.R
 import com.appspot.nkek.daykeeper.View.MainActivity
+import com.appspot.nkek.daykeeper.View.NavigationKotlinActivity
 
 /**
  * Created by nkek on 2017. 11. 18..
@@ -49,7 +50,7 @@ open class StartInfoAdapter(val context: Context,val list:List<Drawable>): Pager
 
         view.findViewById(R.id.agreeButton).setOnClickListener{
             CYDPreference.getInstance().checked = true
-            context.startActivity(Intent(context, MainActivity::class.java))
+            context.startActivity(Intent(context, NavigationKotlinActivity::class.java))
         }
 
         view.findViewById(R.id.disagreeButton).setOnClickListener{
