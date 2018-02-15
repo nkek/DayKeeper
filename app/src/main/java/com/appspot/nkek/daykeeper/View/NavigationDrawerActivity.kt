@@ -17,7 +17,7 @@ import android.widget.Toast
 import com.appspot.nkek.daykeeper.R
 
 
-class NavigationDrawerActivity : Activity(), NavigationView.OnNavigationItemSelectedListener {
+class NavigationDrawerActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
     var mFragment: Fragment? = null
 
@@ -44,10 +44,8 @@ class NavigationDrawerActivity : Activity(), NavigationView.OnNavigationItemSele
 
         val navigationView = findViewById(R.id.nav_view) as NavigationView
         navigationView.setNavigationItemSelectedListener(this)
-//        mFragment = HomeFragment()
-//        val ft = supportFragmentManager.beginTransaction()
-//        ft.replace(R.id.content_fragment_layout, mFragment)
-//        ft.commit()
+        onNavigationItemSelected(navigationView.menu.getItem(0))
+        navigationView.menu.getItem(0).isChecked = true;
     }
 
     override fun onBackPressed() {
@@ -64,10 +62,10 @@ class NavigationDrawerActivity : Activity(), NavigationView.OnNavigationItemSele
         val id = item.itemId
 
         if (id == R.id.navUserInfo) {
-          //  mFragment = HomeFragment()
+            mFragment = HomeFragment()
             Toast.makeText(this, "home", Toast.LENGTH_SHORT).show()
         } else if (id == R.id.navUserDiary) {
-         //   mFragment = DiaryListFragment()
+            mFragment = DiaryListFragment()
             Toast.makeText(this, "diary list", Toast.LENGTH_SHORT).show()
         } else if (id == R.id.nav_manage) {
 
@@ -76,14 +74,14 @@ class NavigationDrawerActivity : Activity(), NavigationView.OnNavigationItemSele
         } else if (id == R.id.nav_send) {
 
         } else {
-          //  mFragment = HomeFragment()
+            mFragment = HomeFragment()
         }
 
-//        if (mFragment != null) {
-//            val ft = supportFragmentManager.beginTransaction()
-//            ft.replace(R.id.content_fragment_layout, mFragment)
-//            ft.commit()
-//        }
+        if (mFragment != null) {
+            val mFragmentManager = supportFragmentManager.beginTransaction()
+            mFragmentManager.replace(R.id.content_fragment_layout, mFragment)
+            mFragmentManager.commit()
+        }
 
         val drawer = findViewById(R.id.drawer_layout) as DrawerLayout
         drawer.closeDrawer(GravityCompat.START)
