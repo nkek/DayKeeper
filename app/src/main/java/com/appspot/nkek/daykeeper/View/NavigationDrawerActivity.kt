@@ -55,9 +55,9 @@ class NavigationDrawerActivity : Activity(), NavigationView.OnNavigationItemSele
         // Handle navigation view item clicks here.
         val id = item.itemId
 
-        if (id == R.id.nav_camera) {
+        if (id == R.id.navUserInfo) {
             // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.navUserDiary) {
 
         } else if (id == R.id.nav_manage) {
 

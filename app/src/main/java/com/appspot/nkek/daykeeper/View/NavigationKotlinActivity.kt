@@ -18,9 +18,9 @@ class NavigationKotlinActivity : AppCompatActivity(), BottomNavigationView.OnNav
     override fun onNavigationItemReselected(item: MenuItem) {
         val id = item.itemId
 
-        if (id == R.id.nav_camera) {
+        if (id == R.id.navUserInfo) {
             // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.navUserDiary) {
 
         } else if (id == R.id.nav_manage) {
 
