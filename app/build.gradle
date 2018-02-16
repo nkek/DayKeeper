@@ -28,7 +28,7 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
 
-
+    compile 'com.github.sundeepk:compact-calendar-view:2.0.2.2'  //The MIT License (MIT)
     compile 'com.github.JakeWharton:ViewPagerIndicator:2.4.1'
     compile 'com.android.support:support-v4:25.3.1'
     compile 'com.android.support:appcompat-v7:25.3.1'
