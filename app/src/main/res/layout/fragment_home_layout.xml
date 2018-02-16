@@ -15,8 +15,8 @@
             android:id="@+id/tv_date"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="#21a4ff"
-            android:gravity="center_vertical"
+            android:background="@color/dayKeeperBackgroungColor"
+            android:gravity="center"
             android:paddingLeft="10dp"
             android:textColor="#ffffff"
             android:textSize="20sp" />
