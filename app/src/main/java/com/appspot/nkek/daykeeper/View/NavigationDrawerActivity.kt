@@ -61,7 +61,7 @@ class NavigationDrawerActivity : AppCompatActivity(), NavigationView.OnNavigatio
         when (id) {
             R.id.navUserInfo -> {
                 mFragment = HomeFragment()
-                Toast.makeText(this, "home", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "home!", Toast.LENGTH_SHORT).show()
             }
             R.id.navUserDiary -> {
                 mFragment = DiaryListFragment()
